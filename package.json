@@ -1,0 +1,28 @@
+{
+  "name": "productreviewer",
+  "version": "1.0.0",
+  "description": "an intuitive application. The user simply inputs the product name, and the application, leveraging artificial intelligence, comprehensively gathers and analyzes reviews from diverse online sources, presenting a succinct summary of the product.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afzal-dev2/AI-Driven-Review-Analysis.git"
+  },
+  "author": "Afzal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Afzal-dev2/AI-Driven-Review-Analysis/issues"
+  },
+  "homepage": "https://github.com/Afzal-dev2/AI-Driven-Review-Analysis#readme",
+  "dependencies": {
+    "apify-client": "^2.8.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-localstorage": "^3.0.5",
+    "openai": "^4.24.1",
+    "outscraper": "^2.0.2"
+  }
+}
