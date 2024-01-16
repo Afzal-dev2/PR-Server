@@ -215,7 +215,7 @@ try {
                 console.log("\n");
                 const completion = await openai.chat.completions.create({
                     messages: [{ role: "system",
-                    content: "Summrize the following reviews and combine into a final one. The final review should be structured with sub-headings and don't include the word amazon in it." + string }],
+                    content: "Summrize the following reviews and combine into a final one. The final review should be structured with sub-headings and ignore words such as 'Amazon'. Let the final review be phrased in such a way that it is given by you and not by people: " + string }],
                     model: "gpt-3.5-turbo",
                 });
     
