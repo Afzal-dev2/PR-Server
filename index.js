@@ -97,7 +97,7 @@ try {
                 -H  "X-API-KEY: ODE4YWFkMjllZTAxNGIxMWFkOTYzMjIzYjJiMjNjYTl8MTU3ZTc5NjY3Yw"
                 */
                 const response = await fetch(
-                    `https://api.app.outscraper.com/amazon/reviews?query= ${url}&limit=10&async=false`, {
+                    `https://api.app.outscraper.com/amazon/reviews?query= ${url}&limit=7&async=false`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
