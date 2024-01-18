@@ -84,6 +84,9 @@ try {
     
         // Print the array of Amazon URLs
         console.log("Amazon urls", amazonUrls);
+        if (amazonUrls.length == 0) {
+            res.send("No results found");
+        }
         //get "the value of organicResults from items"
         amazonUrls.forEach(url => {
             console.log(url);
@@ -202,16 +205,6 @@ try {
                     console.log(review.body);
                 });
     
-    
-    
-                /*items.forEach((item) => {
-                    console.dir(item);
-                    reviews.push(item);
-                });
-                localStorage.setItem('reviews', JSON.stringify(reviews));
-    
-    
-    */
                 console.log("\n");
                 const completion = await openai.chat.completions.create({
                     messages: [{ role: "system",
